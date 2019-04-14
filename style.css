@@ -1,0 +1,98 @@
+html, body {
+  background-color: #CDEDF6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.one {
+  background-color: #5EB1BF;
+  height: 600px;
+  transform: skew(0deg, -10deg) translateY(-120px);
+}
+
+.one .container {
+  transform: skew(0deg, 10deg);
+  padding-top: 210px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 3em;
+  padding: 1em 0;
+  font-weight: normal;
+}
+
+.container p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.two {
+  height: 600px;
+}
+
+.two .container {
+  padding-top: 100px;
+  text-align: right;
+}
+
+.two .container h1,
+.two .container p {
+  color: #000;
+}
+
+.three {
+  background-color: #1E3888;
+  height: 600px;
+  position: relative;
+  width: 100%;
+}
+
+.three::before {
+  content: "";
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  background-color: #1E3888;
+  bottom: 0;
+  left: 0;
+  top: 500px;
+  transform: skewY(15deg);
+}
+
+.three::after {
+  content: "";
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  background-color: #1E3888;
+  bottom: 0;
+  right: 0;
+  top: 500px;
+  transform: skewY(-15deg);
+}
+
+.three .container {
+  padding-top: 190px;
+}
+
+.four {
+  height: 700px;
+  background-color: #89BBFE;
+}
+
+.four .container {
+  padding-top: 270px;
+  text-align: right;
+}
